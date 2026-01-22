@@ -1,0 +1,1193 @@
+/* Template: Sena - Business Landing Page Template
+   Author: InovatikThemes
+   Created: Feb 2018
+   Description: Master CSS file
+*/
+/*****************************************
+Table Of Contents:
+
+01. General Styles
+02. Preloader
+03. Navigation
+04. Header
+05. Welcome
+07. Details Right
+08. Details Left
+10. Testimonials
+16. Footer
+17. Back To Top Button
+18. Terms & Conditions And Privacy Policy
+19. Media Queries
+******************************************/
+/*****************************************
+Colors:
+- Text lighter navy blue: #405266
+- Navbar and footer bg color dark navy blue: #283c52 
+- Primary color Red: #981b1f
+- Light gray: #f2f2f2
+******************************************/
+
+/******************************/
+/*     01. General Styles     */
+/******************************/
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 992px) {
+.container {
+    max-width: 900px;
+}
+}
+
+@media (min-width: 1200px) {
+.container {
+    max-width: 900px;
+}
+}
+.abschnitt {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+.kreis {
+    margin-top: 0px;
+    min-height: 220px;
+    width: 220px;
+    background-color: #f5e5d2;
+    align-items: center;
+    justify-content: center;
+    -webkit-border-radius: 110px;
+    -moz-border-radius: 110px;
+    border-radius: 110px;
+    padding: 50px 15px 30px 15px;
+    text-align: center;
+}
+.kreis p {
+    color: #9a131c;
+    font: italic 400 15px/25px "Open Sans", sans-serif;
+}
+.kreis p .autor {
+    font: italic 600 15px/25px "Open Sans", sans-serif;
+}
+.kreis h1 {
+    color: #9a131c;
+    font: 400 76px/0px "Crimson Text", serif;
+    margin: 0;
+}
+.fa-ul {
+    padding-left: 0;
+    margin-left: 2.14285714em;
+    list-style-type: none;
+}
+.fa-li {
+    color: #9a131c;
+    position: absolute;
+    left: -2.14285714em;
+    width: 2.14285714em;
+    top: 0.14285714em;
+    text-align: center;
+}
+.fa-angle-right {
+    font-size: 1.3rem;
+    margin-right: 0;
+    margin-top: -0.075rem;
+    margin-left: 0.6rem;
+}
+.fa-circle {
+    font-size: 0.6rem;
+    margin-top: 0.4rem;
+    margin-left: -0.3rem;
+}
+.fa-phone {
+    font-size: 01.2rem;
+    margin-top: 0.1rem;
+    margin-left: 0.1rem;
+}
+.fa-envelope {
+    font-size: 01rem;
+    margin-top: 0.1rem;
+    margin-left: -0.1rem;
+}
+.fa-home {
+    font-size: 01.3rem;
+    margin-top: 0rem;
+    margin-left: 0.1rem;
+}
+body, p {
+    color: #405266;
+    font: 400 15px/25px "Open Sans", sans-serif;
+}
+h1 {
+    font: 400 50px/62px "Crimson Text", serif;
+    color: #9a131c;
+}
+h2 {
+    font: 400 42px/50px "Crimson Text", serif;
+    color: #9a131c;
+}
+.header-slider h2 {
+    padding-top: 30px;
+}
+h3 {
+    font: 600 18px/28px "Open Sans", sans-serif;
+    letter-spacing: -0.5px;
+    color: #9a131c;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+}
+h4 {
+    font: 600 15px/25px "Open Sans", sans-serif;
+    letter-spacing: -0.5px;
+    color: #9a131c;
+}
+h5 {
+    font: 600 1rem/1.5rem "Open Sans", sans-serif;
+    letter-spacing: -0.5px;
+}
+.header-h1 {
+    margin-bottom: 1rem;
+    color: #f2f2f2;
+    font: 700 3rem/3.5rem "Open Sans", sans-serif;
+    letter-spacing: -0.5px;
+}
+.header-p {
+    margin-bottom: 1.5rem;
+    color: #f2f2f2;
+    font: 400 1.125rem/1.75rem "Open Sans", sans-serif;
+}
+.under-heading {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+a {
+    color: #9a131c;
+}
+a:hover {
+    color: #9a131c;
+    text-decoration: none;
+}
+.underline, .underline:hover {
+    text-decoration: underline;
+}
+.testimonial-text {
+    font: italic 400 15px/25px "Open Sans", sans-serif;
+}
+.testimonial-author {
+    font: italic 600 15px/25px "Open Sans", sans-serif;
+}
+.button-solid {
+    display: inline-block;
+    padding: 7px 30px 7px 30px;
+    border: 1px solid #981b1f;
+    border-radius: 6px;
+    background-color: #981b1f;
+    color: #f2f2f2;
+    font: 600 14px/25px "Open Sans", sans-serif;
+    transition: all 0.3s ease;
+}
+.button-solid:hover {
+    border: 1px solid #981b1f;
+    background-color: transparent;
+    color: #981b1f;
+}
+.button-outline {
+    display: inline-block;
+    padding: 7px 30px 7px 30px;
+    border: 1px solid #405266;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #405266;
+    font: 600 0.875rem/1.5rem "Open Sans", sans-serif;
+    transition: all 0.3s ease;
+}
+.button-outline:hover {
+    background-color: #405266;
+    color: #f2f2f2;
+}
+.section-divide-hr {
+    width: 84%;
+    height: 1px;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    background-color: #405266;
+    opacity: 0.2;
+}
+.cell-divide-hr {
+    width: 98%;
+    height: 1px;
+    border: none;
+    background-color: #bbbbbb;
+    opacity: 0.5;
+}
+.subheading-hr {
+    width: 4rem;
+    height: 1px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    background-color: #981b1f;
+    opacity: 0.5;
+}
+.form-control-input, .form-control-select {
+    width: 100%;
+    height: 2.75rem; /* looks bad in IE if you use padding instead of height*/
+    padding-left: 1rem;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #405266;
+    font: 400 15px/25px "Open Sans", sans-serif;
+    -webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
+}
+select {
+    /* you should keep these firsts rules in place to maintain cross-browser behaviour */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background-image: url('../images/down-arrow.png');
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    outline: none;
+}
+ select::-ms-expand {
+ display: none; /* removes the ugly default down arrow on select form field in IE11 */
+}
+.form-control-textarea {
+    display: block; /* used to eliminate a bottom gap difference between Chrome and IE/FF */
+    width: 100%;
+    height: 8rem; /* used instead of html rows to normalize height between Chrome and IE/FF */
+    padding-top: 0.75rem;
+    padding-left: 1rem;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #405266;
+    font: 400 15px/25px "Open Sans", sans-serif;
+}
+ .form-control-input::placeholder, .form-control-textarea::placeholder {
+ color: #87919c;
+}
+ .form-control-input::-webkit-input-placeholder, .form-control-textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+ color: #87919c;
+}
+ .form-control-input::-moz-placeholder, .form-control-textarea::-moz-placeholder { /* Firefox 19+ */
+ color: #87919c;
+}
+ .form-control-input:-ms-input-placeholder, .form-control-textarea:-ms-input-placeholder { /* IE 10+ */
+ color: #87919c;
+}
+ .form-control-input:-moz-placeholder, .form-control-textarea:-moz-placeholder { /* Firefox 18- */
+ color: #87919c;
+}
+.form-control-submit-button {
+    display: inline-block;
+    width: 100%;
+    height: 2.75rem;
+    border: 1px solid #981b1f;
+    border-radius: 8px;
+    background-color: #981b1f;
+    color: #f2f2f2;
+    font: 600 15px/25px "Open Sans", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.form-control-submit-button:hover {
+    background-color: transparent;
+    color: #981b1f;
+}
+/* Form Success And Error Message Formatting */
+#msgSubmit.h3.text-center.tada.animated, #msgCSubmit.h3.text-center.tada.animated, #msgSubmit.h3.text-center, #msgCSubmit.h3.text-center {
+    margin-top: 0;
+    margin-bottom: 0;
+    font: 400 1.25rem/1rem "Open Sans", sans-serif;
+}
+#msgSubmit.h3.text-center.tada.animated, #msgSubmit.h3.text-center {
+    color: #f2f2f2;
+}
+#msgCSubmit.h3.text-center.tada.animated, #msgCSubmit.h3.text-center {
+    color: #405266;
+}
+#msgCSubmit.h3.text-center.tada.animated, #msgCSubmit.h3.text-center {
+    display: block;
+}
+.help-block.with-errors {
+    margin-top: 6px;
+    font-size: 13px;
+    line-height: 1rem
+}
+/* end of form success and error message formatting */
+
+/* Form Success And Error Message Animation From Animate.css */
+@-webkit-keyframes tada {
+ from {
+ -webkit-transform: scale3d(1, 1, 1);
+ -ms-transform: scale3d(1, 1, 1);
+ transform: scale3d(1, 1, 1);
+}
+ 10%, 20% {
+ -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+ -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+ transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+}
+ 30%, 50%, 70%, 90% {
+ -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+ -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+ transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+}
+ 40%, 60%, 80% {
+ -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+ -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+ transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+}
+ to {
+ -webkit-transform: scale3d(1, 1, 1);
+ -ms-transform: scale3d(1, 1, 1);
+ transform: scale3d(1, 1, 1);
+}
+}
+ @keyframes tada {
+ from {
+ -webkit-transform: scale3d(1, 1, 1);
+ -ms-transform: scale3d(1, 1, 1);
+ transform: scale3d(1, 1, 1);
+}
+ 10%, 20% {
+ -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+ -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+ transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+}
+ 30%, 50%, 70%, 90% {
+ -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+ -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+ transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+}
+ 40%, 60%, 80% {
+ -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+ -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+ transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+}
+ to {
+ -webkit-transform: scale3d(1, 1, 1);
+ -ms-transform: scale3d(1, 1, 1);
+ transform: scale3d(1, 1, 1);
+}
+}
+.tada {
+    -webkit-animation-name: tada;
+    animation-name: tada;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+/* end of form success and error message animation from Animate.css */
+
+/* Fade-move Animation For Product Details Lightbox */
+/* at start */
+.my-mfp-slide-bottom .zoom-anim-dialog {
+    opacity: 0;
+    transition: all 0.2s ease-out;
+    -webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+    -ms-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+    transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+}
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+    opacity: 1;
+    -webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 );
+    -ms-transform: translateY(0) perspective( 600px ) rotateX( 0 );
+    transform: translateY(0) perspective( 600px ) rotateX( 0 );
+}
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+    opacity: 0;
+    -webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
+    -ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
+    transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
+}
+/* dark overlay, start state */
+.my-mfp-slide-bottom.mfp-bg {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+/* end of fade-move animation for product details lightbox */
+
+/* Fade Animation For Image Swiper Gallery */
+@-webkit-keyframes fadeIn {
+ from {
+ opacity: 0;
+}
+ to {
+ opacity: 1;
+}
+}
+ @keyframes fadeIn {
+ from {
+ opacity: 0;
+}
+ to {
+ opacity: 1;
+}
+}
+.fadeIn {
+    -webkit-animation: fadeIn 0.6s;
+    animation: fadeIn 0.6s;
+}
+ @-webkit-keyframes fadeOut {
+ from {
+ opacity: 1;
+}
+ to {
+ opacity: 0;
+}
+}
+ @keyframes fadeOut {
+ from {
+ opacity: 1;
+}
+ to {
+ opacity: 0;
+}
+}
+.fadeOut {
+    -webkit-animation: fadeOut 0.8s;
+    animation: fadeOut 0.8s;
+}
+/* end of fade animation for image swiper gallery */
+
+
+
+/*************************/
+/*     02. Preloader     */
+/*************************/
+.spinner-wrapper {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #283c52;
+}
+.spinner {
+    position: absolute;
+    top: 50%; /* centers the loading animation vertically one the screen */
+    left: 50%; /* centers the loading animation horizontally one the screen */
+    width: 60px;
+    height: 20px;
+    margin: -10px 0 0 -30px; /* is width and height divided by two */
+    text-align: center;
+}
+.spinner > div {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: #f2f2f2;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+ @-webkit-keyframes sk-bouncedelay {
+ 0%, 80%, 100% {
+-webkit-transform: scale(0);
+}
+ 40% {
+-webkit-transform: scale(1.0);
+}
+}
+ @keyframes sk-bouncedelay {
+ 0%, 80%, 100% {
+ -webkit-transform: scale(0);
+ -ms-transform: scale(0);
+ transform: scale(0);
+}
+40% {
+ -webkit-transform: scale(1.0);
+ -ms-transform: scale(1.0);
+ transform: scale(1.0);
+}
+}
+/**************************/
+/*     03. Navigation     */
+/**************************/
+
+.navbar-custom {
+    background-color: rgba(236, 227, 215, 0.9);
+    font: 400 14px/24px "Open Sans", sans-serif;
+    text-transform: uppercase;
+    padding-right: 0;
+}
+.navbar-custom .navbar-nav {
+    margin-top: 0.75rem;
+}
+.navbar-custom .nav-item .nav-link {
+    padding: 0.5rem 0.75rem 0.2rem 0.5rem;
+    color: rgba(42, 53, 56, 1);
+    transition: all 0.3s ease;
+}
+.navbar-custom .nav-item .nav-link:hover {
+    color: rgba(154, 19, 28, 1);
+}
+.navbar-custom .nav-item .nav-link.active {
+    color: rgba(154, 19, 28, 1);
+}
+.navbar-custom .nav-item:last-of-type {
+    margin-bottom: 0.5rem;
+}
+.navbar-custom .navbar-toggler {
+    border-color: #f2f2f2;
+    border: 0px;
+}
+.navbar-dark .navbar-toggler-icon {
+    width: 44px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 26 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(151, 25, 29, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/*********************/
+/*    04. Header     */
+/*********************/
+.header-slider {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background: url('../images/header-background.jpg') center center no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+/***************************/
+/*     05. Welcome     */
+/***************************/
+
+#welcome {
+    background: url('../images/welcome_hg_mobile.png') center right no-repeat;
+}
+/************************/
+/*     06. Leistung     */
+/************************/
+.icon-cards {
+    padding-top: 5rem;
+}
+.icon-cards .card {
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    margin-top: 0;
+    margin-bottom: 4rem;
+}
+.icon-cards .card-icon {
+    color: #405266;
+}
+.icon-cards .card-title {
+    margin-bottom: 0.5rem;
+}
+.icon-cards .card-body {
+    padding-right: 0;
+    padding-left: 0;
+}
+.icon-cards .card-body p {
+    margin-bottom: 1.25rem;
+}
+/*****************************/
+/*     07. Details Right     */
+/*****************************/
+.half-accordion {
+    background-color: #fff;
+}
+.half-accordion .item {
+    margin-bottom: 2rem;
+}
+.half-accordion span[aria-expanded="true"] .circle-numbering {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 8px;
+    border: 1px solid #405266;
+    border-radius: 50%;
+    background-color: #405266;
+    color: #f2f2f2;
+    text-align: center;
+    vertical-align: top;
+    font-size: 1rem;
+    padding-top: 0rem;
+    cursor: pointer;
+}
+.half-accordion span[aria-expanded="false"] .circle-numbering {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 8px;
+    border: 1px solid #981b1f;
+    border-radius: 50%;
+    background-color: #981b1f;
+    color: #f2f2f2;
+    text-align: center;
+    vertical-align: top;
+    font-size: 1rem;
+    padding-top: 0rem;
+    cursor: pointer;
+}
+.half-accordion .accordion-title {
+    display: inline-block;
+    width: 85%;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    font: 600 15px/25px "Open Sans", sans-serif;
+    letter-spacing: -0.5px;
+    color: #9a131c;
+    cursor: pointer;
+}
+.half-accordion .accordion-body {
+    margin-top: 0.25rem;
+    margin-left: 32px;
+}
+/****************************/
+/*     08. Details Left     */
+/****************************/
+.half-text {
+    background-color: #f2f2f2;
+}
+.half-text .text-pane-container {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-top: 5.5rem;
+    padding-bottom: 5rem;
+}
+.half-text h4 {
+    margin-bottom: 0.75rem;
+}
+.half-text p:first-of-type {
+    margin-bottom: 0.5rem;
+}
+.half-text .fa-li {
+    margin-top: 0.125rem;
+    color: #981b1f;
+}
+.half-text .progress {
+    height: 1.75rem;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+    background-color: #fff;
+}
+.half-text .progress-bar {
+    display: block;
+    padding-left: 1.5rem;
+    border-radius: 4px;
+    background-color: #981b1f;
+    font: 400 0.75rem/1.75rem "Open Sans", sans-serif;
+    text-align: left;
+}
+.half-text .progress-bar.first {
+    width: 100%;
+}
+.half-text .progress-bar.second {
+    width: 75%;
+}
+.half-text .progress-bar.third {
+    width: 90%;
+}
+.half-text .image-pane {
+    height: 22rem;
+    margin: auto;
+    background: linear-gradient(rgba(255, 99, 30, 0.0), rgba(255, 99, 30, 0.0)), url('../images/half-text-background.jpg') center no-repeat;
+    background-size: cover;
+}
+/***********************/
+/*     09. Person     */
+/***********************/
+
+/****************************/
+/*     10. Bildheadline    */
+/****************************/
+.band {
+    height: 170px;
+    background-color: #f5e5d2;
+}
+#leistung, #person, #kooperation, #content, #kontakt {
+    padding-top: 52px;
+}
+#leistung .bildband {
+    height: 170px;
+    background: url('../images/hg_leistungen.png') center right no-repeat;
+    display: flex;
+    align-items: center;
+}
+#person .bildband {
+    height: 170px;
+    background: url('../images/hg_person.png') center right no-repeat;
+    display: flex;
+    align-items: center;
+}
+#kooperation .bildband {
+    height: 170px;
+    background: url('../images/hg_kooperation.png') center right no-repeat;
+    display: flex;
+    align-items: center;
+}
+#content .bildband {
+    height: 170px;
+    background: url('../images/hg_content.png') center right no-repeat;
+    display: flex;
+    align-items: center;
+}
+#kontakt .bildband {
+    height: 170px;
+    background: url('../images/hg_kontakt.png') center right no-repeat;
+    display: flex;
+    align-items: center;
+}
+/****************************/
+/*     10. Kundenstimmen     */
+/****************************/
+.cards-slider {
+    padding: 2em;
+    background-color: #9a131c;
+    border-radius: 3rem !important;
+}
+.cards-slider .card {
+    border: none;
+    background-color: transparent;
+}
+.cards-slider .card-image {
+    width: 5rem;
+    height: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+.cards-slider .testimonial-text {
+    margin-bottom: 6px;
+    color: #f2f2f2;
+    font-style: italic;
+}
+.cards-slider .testimonial-author {
+    color: #f2f2f2;
+}
+.cards-slider .swiper-pagination {
+    bottom: -5px;
+}
+.cards-slider .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #f2f2f2;
+}
+/************************/
+/*     11. Kooperation     */
+/************************/
+.image-cards {
+    padding-top: 5.25rem;
+    padding-bottom: 0.5rem;
+}
+.image-cards .card {
+    margin: 0 auto 4rem auto;
+    border: none;
+}
+.image-cards .popup-with-move-anim:first-of-type {
+    height: 100%; /* necessary to avoid an IE11 display problem */
+}
+/* Images Hover Animation */
+.image-cards .image-container {
+    overflow: hidden;
+    border-radius: 8px;
+}
+.image-cards .image-container img {
+    margin: 0px;
+    transition: all 0.3s;
+}
+.image-cards .image-container img:hover {
+    -moz-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+}
+/* end of images hover animation */
+
+.image-cards .card-title {
+    margin-bottom: 0.5rem;
+}
+.image-cards .card-body {
+    padding: 1.5rem 0 1.25rem 0;
+}
+.image-cards .card-body p {
+    margin-bottom: 1.25rem;
+}
+/************************/
+/*     13. Content     */
+/************************/
+
+
+
+/*******************/
+/*    14. Team     */
+/*******************/
+.image-cards-2 {
+    padding-top: 5rem;
+    padding-bottom: 2.25rem;
+}
+.image-cards-2 .p-under-header {
+    margin-bottom: 3rem;
+}
+.image-cards-2 .card {
+    max-width: 280px;
+    margin-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+}
+.image-cards-2 .card .image-container {
+    position: relative;
+    height: 100%; /* necessary for proper IE11 display */
+}
+.image-cards-2 .card .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+/* Team Members Images Hover State */
+.image-cards-2 .card .image-container .hover-overlay {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background: rgba(228, 16, 61, 0.8);
+    color: #fff;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 0.3s;
+}
+.image-cards-2 .card .image-container:hover .hover-overlay {
+    opacity: 1;
+}
+.image-cards-2 .card .image-container .hover-overlay .overlay-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.image-cards-2 .card .image-container .hover-overlay .overlay-content p {
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+    margin-bottom: 0;
+    color: #fff;
+}
+.image-cards-2 .card .image-container .hover-overlay .overlay-content .social-links {
+    margin-top: 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+.image-cards-2 .card .image-container .hover-overlay .fa-stack .fa-circle {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+.image-cards-2 .card .image-container .hover-overlay .fa-stack .fa-stack-1x {
+    color: #981b1f;
+    transition: color 0.3s ease;
+}
+.image-cards-2 .card .image-container .hover-overlay .fa-stack:hover .fa-circle {
+    color: #981b1f;
+}
+.image-cards-2 .card .image-container .hover-overlay .fa-stack:hover .fa-stack-1x {
+    color: #fff;
+}
+.image-cards-2 .card .image-container .hover-overlay a, .image-cards-2 .card .image-container .hover-overlay a:hover {
+    color: #fff;
+}
+/* end of team members images hover state */
+
+.image-cards-2 .card-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.image-cards-2 .card h4 {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+/***********************/
+/*     15. Contact     */
+/***********************/
+.map-and-form {
+    padding-top: 5.25rem;
+    padding-bottom: 5rem;
+    background-color: #f2f2f2;
+}
+.map-and-form .contact-list {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+.map-and-form li i.fa {
+    margin-right: 0.5rem;
+    color: #981b1f;
+}
+.map-and-form .fa-phone {
+    margin-right: 0;
+    margin-bottom: 0.125rem;
+    vertical-align: middle;
+    font-size: 1rem;
+}
+.map-and-form .fa-chrome {
+    margin-right: 0px;
+    margin-bottom: 0.125rem;
+    vertical-align: middle;
+    font-size: 1rem;
+}
+.map-and-form .map-responsive {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+    padding-bottom: 64%;
+    border-radius: 6px;
+}
+.map-and-form .map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.map-and-form .form-control-submit-button:hover {
+    color: #981b1f;
+}
+/**********************/
+/*     16. Footer     */
+/**********************/
+.footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #283c52;
+}
+.footer a {
+    color: #f5e5d2;
+    font: 400 14px/24px "Open Sans", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-right: 18px;
+}
+/**********************************/
+/*     17. Back To Top Button     */
+/**********************************/
+a.back-to-top {
+    position: fixed;
+    z-index: 999;
+    right: 12px;
+    bottom: 12px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background: #981b1f url("../images/up-arrow.png") no-repeat center 47%;
+    background-size: 18px 18px;
+    text-indent: -9999px;
+}
+a:hover.back-to-top {
+    background-color: #ca252b;
+}
+/*****************************************************/
+/*     18. Terms & Conditions And Privacy Policy     */
+/*****************************************************/
+.header-center-text-fullwidth {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    background-color: #283c52;
+    text-align: center;
+}
+.header-center-text-fullwidth h1 {
+    color: #f2f2f2;
+}
+.text-section-fullwidth {
+    padding-top: 4rem;
+    padding-bottom: 5.5rem;
+}
+.text-section-fullwidth .breadcrumbs .list-inline-item {
+    margin-right: 0.25rem;
+    font-size: 0.875rem;
+}
+
+/*****************************/
+/*     19. Media Queries     */
+/*****************************/	
+/* Min-width width 768px */
+@media (min-width: 768px) {
+.navbar-custom {
+    padding: 18px 0rem 6px 1.5rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: 0.3s;
+}
+.navbar-custom.top-nav-collapse {
+    padding: 14px 0rem 2px 1.5rem;
+    background-color: rgba(232, 202, 173, 0.9);
+}
+.navbar-custom .navbar-nav {
+    margin-top: 0px;
+    margin-bottom: 1px;
+}
+.navbar-custom .nav-item:last-of-type {
+    margin-bottom: 0;
+}
+.list-cards .card .price .currency {
+    top: -30px;
+    font: 400 1.75rem/2rem "Open Sans", sans-serif;
+}
+.list-cards .card .price {
+    font: 600 4.5rem/3.5rem "Open Sans", sans-serif;
+}
+.big-numbers .cell {
+    width: 14rem;
+}
+.filtered-grid {
+    padding-top: 76px;
+    padding-bottom: 100px;
+}
+.filtered-grid .element-item {
+    width: 25%;
+}
+.filtered-grid .grid .element-item .element-item-overlay {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.filtered-grid .grid .element-item:hover .element-item-overlay {
+    opacity: 1;
+}
+.map-and-form .contact-list {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.footer-three-cols .footer-col {
+    margin-bottom: 0;
+}
+.footer-three-cols .copyright {
+    margin-top: 1.75rem;
+}
+/* Terms & Conditions And Privacy Policy */
+.header-center-text-fullwidth {
+    padding-top: 11rem;
+    padding-bottom: 8rem;
+}
+}
+
+/* Min-width width 992px */
+@media (min-width: 992px) {
+h1 {
+    font: 400 60px/72px "Crimson Text", serif;
+}
+h2 {
+    font: 400 50px/62px "Crimson Text", serif;
+}
+h3 {
+    font: 600 24px/30px "Open Sans", sans-serif;
+    color: #9a131c;
+}
+h4 {
+    font: 600 18px/25px "Open Sans", sans-serif;
+}
+.half-accordion .accordion-title {
+    font: 600 18px/25px "Open Sans", sans-serif;
+}
+.header-h1 {
+    font: 700 3.5rem/4rem "Open Sans", sans-serif;
+}
+.header-p {
+    font: 400 1.25rem/2rem "Open Sans", sans-serif;
+}
+.under-heading {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.lightbox-details-container img {
+    max-width: 99%;
+}
+.lightbox-details-container h3 {
+    margin-top: 1.125rem;
+}
+.header-slider .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.image-slider .swiper-container {
+    max-width: 30rem;
+    margin-left: 2rem;
+    margin-bottom: 0;
+}
+.icon-cards .card-body {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.half-accordion {
+    padding-bottom: 0;
+}
+.half-accordion .accordion-title {
+    width: 85%;
+}
+.big-numbers {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+}
+
+/* Min-width width 1200px */
+@media (min-width: 1200px) {
+#welcome {
+    background: url('../images/welcome_hg_small.png') center right no-repeat;
+}
+.image-slider {
+    padding-bottom: 6rem;
+}
+.image-slider h3 {
+    margin-top: 1.5rem;
+}
+.image-cards .card {
+    width: 91%;
+}
+.big-numbers .cell {
+    width: 16rem;
+}
+.filtered-grid .element-item {
+    width: 277px; /* to eliminate 1px bottom gap between projects images */
+}
+.filtered-grid .grid .element-item .element-item-overlay span {
+    top: 45%;
+}
+.map-and-form .form-control-textarea {
+    height: 10rem;
+}
+.footer-three-cols .footer-col {
+    width: 95%;
+}
+}
+
+/* Min-width width 1500px */
+@media (min-width: 1500px) {
+#welcome {
+    background: url('../images/welcome_hg.png') center right no-repeat;
+}
+	}
